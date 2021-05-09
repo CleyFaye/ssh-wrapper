@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    ".nyc_output": true,
+    ".tsbuildinfo": true,
+    ".tscache": true,
+    ".vscode": true,
+    "lib": true,
+    "node_modules": true
+  }
+}

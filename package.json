@@ -1,0 +1,42 @@
+{
+  "name": "@cley_faye/ssh-wrapper",
+  "version": "0.1.0",
+  "description": "A wrapper around SSH to run operations on remote servers",
+  "main": "lib/sshwrapper.js",
+  "scripts": {
+    "prepack": "npm run grunt -- clean build",
+    "grunt": "npx grunt --gruntfile Gruntfile.cjs"
+  },
+  "files": [
+    "lib/**/*",
+    "!**/*.map"
+  ],
+  "type": "module",
+  "keywords": [
+    "ssh",
+    "remote"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CleyFaye/ssh-wrapper.git"
+  },
+  "author": "Gabriel Paul \"Cley Faye\" Risterucci",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CleyFaye/ssh-wrapper/issues"
+  },
+  "homepage": "https://github.com/CleyFaye/ssh-wrapper#readme",
+  "devDependencies": {
+    "@keeex/eslint-config": "^1.4.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "eslint": "^7.26.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "grunt": "^1.4.0",
+    "grunt-banner": "^0.6.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-ts": "^6.0.0-beta.22",
+    "load-grunt-tasks": "^5.1.0",
+    "typescript": "^4.2.4"
+  }
+}
