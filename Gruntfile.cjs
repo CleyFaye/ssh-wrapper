@@ -25,12 +25,10 @@ module.exports = grunt => {
         "lib",
       ],
     },
-    ts: {
-      lib: {
-        tsconfig: {
-          tsconfig: "./",
-          passThrough: true,
-        },
+    run: {
+      ts_lib: {
+        cmd: "npx",
+        args: ["tsc"],
       },
     },
     usebanner: {
@@ -49,7 +47,7 @@ module.exports = grunt => {
     "build",
     "Build the JavaScript code from TypeScript",
     [
-      "ts:lib",
+      "run:ts_lib",
       "usebanner:lib",
     ],
   );
