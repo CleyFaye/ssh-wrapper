@@ -1,6 +1,6 @@
 {
   "name": "@cley_faye/ssh-wrapper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A wrapper around SSH to run operations on remote servers",
   "main": "lib/sshwrapper.js",
   "scripts": {
